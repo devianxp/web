@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Sueldo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Sueldo Gerente</h1>
+        <form id="salary-form">
+            <div class="form-group">
+                <label for="working-days">Días trabajados:</label>
+                <input type="number" id="working-days" name="working-days" required>
+            </div>
+            <div class="form-group">
+                <label for="absent-days">Inasistencias:</label>
+                <input type="number" id="absent-days" name="absent-days" required>
+            </div>
+            <div class="form-group">
+                <label for="rest-days">Días descansados:</label>
+                <input type="number" id="rest-days" name="rest-days" required>
+            </div>
+            <div class="form-group">
+                <label for="double-days">Días dobles:</label>
+                <input type="number" id="double-days" name="double-days" required>
+            </div>
+            <div class="form-group">
+                <label for="recarga">Recarga?</label>
+                <input type="checkbox" id="recarga" name="recarga">
+            </div>
+            <div class="form-group">
+                <label for="month-31">Mes de 31 días?</label>
+                <input type="checkbox" id="month-31" name="month-31">
+            </div>
+            <div class="form-group">
+                <label for="insumos">Insumos?</label>
+                <input type="checkbox" id="insumos" name="insumos">
+            </div>
+            <button type="button" onclick="calculateSalary()">Calcular Sueldo</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
